@@ -1,0 +1,33 @@
+1-) Yukarı verilen dizinin sort türüne göre aşamalarını yazınız.
+    Cevap: 1. Adım: 27 sayısı, 22 ile karşılaştırılır ve 22'nin sağında kalır. --> [22,27,16,2,18,6]
+           2. Adım: 16 sayısı, 27 ile karşılaştırılır ve 27'nin soluna yerleştirilir. Ardından, 22 ile de karşılaştırılır ve o da 16'nın soluna yerleştirilir. --> [16,22,27,2,18,6]
+           3. Adım:  2 sayısı, 27, 22 ve 16'nın hepsinin soluna yerleştirilir. --> [2,16,22,27,18,6]
+           4. Adım: 18 sayısı, 27 ile karşılaştırılır ve 27'nin soluna yerleştirilir. Ardından 22 ile karşılaştırılır ve o da 18'nin soluna yerleştirilir. --> [2,16,18,22,27,6]
+           5. Adım: 6 sayısı, 27, 22, 18 ve 16'nın hepsinin soluna yerleştirilir. --> [2,6,16,18,22,27]
+           Sıralanmış Dizi: [2,6,16,18,22,27]
+
+
+2) Big-O gösterimini yazınız.
+      Step 1 -> n
+      Step 2 -> n-1
+      Step 3 -> n-2
+      ....
+      Step n-1 -> 1
+      
+      sum = (n*(n-1))/2 -> O(n^2)
+
+3-) Time Complexity: Dizi sıralandıktan sonra 18 sayısı aşağıdaki case'lerden hangisinin kapsamına girer? Yazınız
+
+        1- Average case: Aradığımız sayının ortada olması
+        2- Worst case: Aradığımız sayının sonda olması
+        3- Best case: Aradığımız sayının dizinin en başında olması.
+
+Time Complexity: 18 sayısı sıralanmış dizide [2,6,16,18,22,27] sıralamasında bulunuyor. 18 sayısı dizinin ortasında yer aldığı için bu durum Average Case kapsamına girer.
+
+4-) [7,3,5,8,2,9,4,15,6] dizisinin Insertion Sort'a göre ilk 4 adımını yazınız.
+
+      - min=2 -> swap 7 and 2 -> [2, | 3, 5, 8, 7, 9, 4, 15, 6]
+      - min=3 -> no need to swap [2, 3, | 5, 8, 7, 9, 4, 15, 6]
+      - min=4 -> swap 5 and 4 -> [2, 3, 4, | 8, 7, 9, 5, 15, 6]
+      - min=5 -> swap 8 and 5 -> [2, 3, 4, 5, | 7, 9, 8, 15, 6]
+
