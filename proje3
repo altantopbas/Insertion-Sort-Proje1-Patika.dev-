@@ -1,0 +1,62 @@
+1-) [7, 5, 1, 8, 3, 6, 0, 9, 4, 2] dizisinin Binary-Search-Tree aşamalarını yazınız.
+       1. Aşama: İlk Eleman (7)
+                İlk eleman 7 olduğundan, kök düğüm olarak eklenir.
+                
+       2. Aşama: İkinci Eleman (5)
+                5, kök düğüm olan 7’den küçük olduğundan sol tarafa eklenir.
+                
+       3. Aşama: Üçüncü Eleman (1)
+                1, 7’den küçük, 5’ten de küçük olduğundan 5’in soluna eklenir.
+
+       4. Aşama: Dördüncü Eleman (8)
+                8, 7’den büyük olduğundan sağ tarafa eklenir.
+
+       5. Aşama: Beşinci Eleman (3)
+                3, 7’den küçük ve 5’ten küçük, fakat 1’den büyük olduğundan 1’in sağına eklenir.
+
+       6. Aşama: Altıncı Eleman (6)
+                6, 7’den küçük, fakat 5’ten büyük olduğundan 5’in sağına eklenir.
+
+       7. Aşama: Yedinci Eleman (0)
+                0, 7’den küçük, 5’ten küçük ve 1’den de küçük olduğundan 1’in soluna eklenir.
+
+       8. Aşama: Sekizinci Eleman (9)
+                9, 7’den büyük ve 8’den de büyük olduğundan 8’in sağına eklenir.
+
+       9. Aşama: Dokuzuncu Eleman (4)
+                4, 7’den küçük, 5’ten küçük fakat 3’ten büyük olduğundan 3’ün sağına eklenir.
+
+      10. Aşama: Onuncu Eleman (2)
+                2, 7’den küçük, 5’ten küçük, 1’den büyük ve 3’ten küçük olduğundan 3’ün soluna eklenir.
+
+      Dizinin Binary Search Tree (BST) yapısına göre sıralanmış hali:
+          
+                      7
+                     / \
+                    5   8
+                   / \   \
+                  1   6   9
+                 / \
+                0   3
+                   / \
+                  2   4
+
+             
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
